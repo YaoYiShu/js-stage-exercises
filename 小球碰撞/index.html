@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小球碰撞</title>
+  <style>
+    #box {
+      margin: 0 auto;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 800px;
+      height: 600px;
+      background-color: azure;
+      border: 5px solid #666666;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="play()">按钮</button>
+  <button onclick="stop()">停止</button>
+  <div id="box">
+
+  </div>
+  <script>
+    var timer;
+    var balls = [];
+    function play() {
+      // clearInterval(timer)
+      var ball = document.createElement('div')
+      ball.style.cssText = "width:50px;height:50px;position:absolute;border-radius:50%;"
+      ball.style.backgroundColor = 'rgba(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) +
+        ',' + Math.floor(Math.random() * 256) + ')'
+      box.appendChild(ball)
+
+      var x = 10
+      var y = 10
+      var balltop = Math.floor(Math.random() * (box.clientWidth - ball.offsetWidth+1)+ball.offsetWidth);
+      var ballleft = Math.floor(Math.random() * (box.clientHeight - ball.offsetHeight+1)+ball.offsetHeight);
+
+      ball.style.top = balltop + "px"
+      ball.style.left = ballleft + "px"
+
+      // 将小球存入数组
+      balls.push(ball)
+      console.log(balls);
+
+      timer = setInterval(function () {
+        ballleft += x
+        balltop += y
+        if (balltop > (box.clientHeight - ball.offsetHeight)) {
+          balltop = box.clientHeight - ball.offsetHeight
+          y = -y
+        }
+        if(balltop < 0) {
+          balltop = 0
+          y = -y
+        }
+        if (ballleft > (box.clientWidth - ball.offsetWidth)) {
+          ballleft = box.clientWidth - ball.offsetWidth
+          x = -x
+        }
+        if(ballleft < 0) {
+          ballleft = 0
+          x = -x
+        }
+
+        ball.style.top = balltop + 'px'
+        ball.style.left = ballleft + 'px'
+
+        box.appendChild(ball)
+      }, 30)
+
+    }
+
+    timer2 = setInterval(() => {
+      play()
+    }, 1000);
+    
+    function stop() {
+      clearInterval(timer2)
+    }
+  </script>
+</body>
+
+</html>
