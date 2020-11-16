@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <button>按钮</button> -->
+  <canvas id="canvas"></canvas>
+  <script>
+    /** @type {HTMLCanvasElement} */
+    var canvas = document.querySelector("#canvas");
+    // var winHeight = window.innerHeight;
+    // var winWidth = window.innerWidth;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    var ctx = canvas.getContext("2d");
+
+    var drawRect = function (x, y, color) {
+      ctx.beginPath();
+      ctx.fillStyle = color || "red";
+      ctx.fillRect(x, y, 10, 40, color);
+      ctx.closePath();
+    }
+
+    // drawRect(0, 0)
+
+    var timer;
+    var x = 0;
+    var y = 10;
+    var vy = 10;
+
+    function show() {
+      timer = setInterval(() => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        y += vy;
+        if (y > window.innerHeight) {
+          // y = window.innerHeight;
+          y = 10;
+        }
+        drawRect(x, y, "blue")
+      }, 50);
+    }
+
+    show()
+  </script>
+</body>
+
+</html>

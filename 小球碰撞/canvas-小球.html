@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #canvas {
+      margin: 10px 10px;
+      background-color: #eee;
+    }
+  </style>
+</head>
+
+
+<body>
+  <canvas id="canvas"></canvas>
+  <script>
+    /* @type {HTMLCanvasElement} */
+    var canvas = document.querySelector("#canvas");
+    var w = 600;
+    var h = 600;
+    canvas.width = w;
+    canvas.height = h;
+
+    var ctx = canvas.getContext("2d");
+
+    var r = 50;
+
+    var drawCircle = function (x, y, r, color) {
+      ctx.beginPath();
+      ctx.fillStyle = color || "red";
+      ctx.arc(x, y, r, 0, 2 * Math.PI, false);
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    var x = 0;
+    var y = 0;
+    var vx = 5;
+    var vy = 8;
+
+    var move = function () {
+      x += vx;
+      y += vy;
+
+      if (x > w - r) {
+        x = w - r;
+        vx = -vx
+      }
+
+      if (x - r < 0) {
+        x = r;
+        vx = -vx
+      }
+
+      if (y > h - r) {
+        y = h - r;
+        vy = -vy;
+      }
+
+      if (y - r < 0) {
+        y = r;
+        vy = -vy;
+      }
+
+
+      ctx.clearRect(0, 0, w, h)
+      drawCircle(x, y, 50, "blue")
+      window.requestAnimationFrame(move)
+    }
+
+    move()
+  </script>
+</body>
+
+</html>

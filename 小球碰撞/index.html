@@ -29,6 +29,7 @@
   <script>
     var timer;
     var balls = [];
+
     function play() {
       // clearInterval(timer)
       var ball = document.createElement('div')
@@ -39,8 +40,8 @@
 
       var x = 10
       var y = 10
-      var balltop = Math.floor(Math.random() * (box.clientWidth - ball.offsetWidth+1)+ball.offsetWidth);
-      var ballleft = Math.floor(Math.random() * (box.clientHeight - ball.offsetHeight+1)+ball.offsetHeight);
+      var balltop = Math.floor(Math.random() * (box.clientWidth - ball.offsetWidth + 1) + ball.offsetWidth);
+      var ballleft = Math.floor(Math.random() * (box.clientHeight - ball.offsetHeight + 1) + ball.offsetHeight);
 
       ball.style.top = balltop + "px"
       ball.style.left = ballleft + "px"
@@ -56,7 +57,7 @@
           balltop = box.clientHeight - ball.offsetHeight
           y = -y
         }
-        if(balltop < 0) {
+        if (balltop < 0) {
           balltop = 0
           y = -y
         }
@@ -64,7 +65,7 @@
           ballleft = box.clientWidth - ball.offsetWidth
           x = -x
         }
-        if(ballleft < 0) {
+        if (ballleft < 0) {
           ballleft = 0
           x = -x
         }
@@ -80,7 +81,7 @@
     timer2 = setInterval(() => {
       play()
     }, 1000);
-    
+
     function stop() {
       clearInterval(timer2)
     }
