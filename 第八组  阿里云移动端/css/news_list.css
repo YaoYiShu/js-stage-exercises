@@ -1,0 +1,67 @@
+#h_accordion li {
+  width: 90%;
+  margin: auto;
+  margin-top: 7px;
+}
+.h_accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 0.35rem 0;
+  color: #4d4d4d;
+  font-size: 0.28rem;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.h_accordion li i {
+  font-size: 0.28rem;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.h_accordion li i.fa-chevron-down img {
+  width: 0.25rem;
+  height: 0.35rem;
+  position: absolute;
+  /* left: 6.7rem;   */
+  right: 1.75rem;
+  top: 0.45rem;
+}
+
+/* .h_accordion li.open .link {   
+   color: #b63b4d;   
+  }   
+    
+  .h_accordion li.open i {   
+   color: #b63b4d;   
+  }    */
+.h_accordion li.open i.fa-chevron-down img {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.h_accordion li .link > span {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  background-size: cover;
+  /* float: left; */
+}
+/* .h_accordion li .link{
+    float: left;
+  } */
+.h_submenu {
+  display: none;
+  font-size: 0.28rem;
+  line-height: 0.45rem;
+}
+.h_accordion li .h_submenu span {
+  color: #ccc;
+  font-size: 1em;
+  margin-bottom: 5px;
+}

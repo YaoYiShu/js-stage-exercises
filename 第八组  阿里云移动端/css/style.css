@@ -1,0 +1,246 @@
+.C_wrap {
+  width: 100%;
+  max-width: 20.7rem;
+  margin: 0 auto;
+}
+.C_wrap .C_mobile_banner {
+  position: relative;
+  width: 100%;
+  height: 16.55rem;
+  background: #373d41;
+  overflow: hidden;
+}
+.C_wrap .C_mobile_banner .C_mobile_wrap {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  width: 500%;
+  height: 16.55rem;
+  margin-left: -100%;
+  background: #333438;
+  overflow: hidden;
+}
+.C_wrap .C_mobile_banner .C_mobile_wrap .C_nav_img {
+  width: 20.7rem;
+  visibility: visible;
+}
+.C_wrap .C_mobile_banner .C_mobile_wrap .C_nav_img a {
+  width: 100%;
+  display: block;
+}
+.C_wrap .C_mobile_banner .C_mobile_wrap .C_nav_img a .C_pic {
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+.C_wrap .C_mobile_banner .C_num_wrap {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0.1rem;
+  text-align: center;
+  z-index: 1;
+}
+.C_wrap .C_mobile_banner .C_num_wrap .C_slider_num {
+  width: 1.65rem;
+  height: 0.08rem;
+  background: #fff;
+  margin: 0.1rem;
+}
+.C_wrap .C_mobile_banner .C_num_wrap .C_slider_num.active {
+  background: #00c1de;
+}
+.C_wrap .C_banner_list {
+  display: flex;
+  width: 100%;
+}
+.C_wrap .C_banner_list .C_banner_item {
+  flex: 1;
+  background: #efefef;
+  height: 4.386rem;
+}
+.C_wrap .C_banner_list .C_banner_item a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.C_wrap .C_banner_list .C_banner_item a .C_left {
+  width: 2.3rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+.C_wrap .C_banner_list .C_banner_item a .C_left span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.C_wrap .C_banner_list .C_banner_item a .C_left .C_initial_1 {
+  background: url(../images/ia_10010.png) no-repeat center / 2rem;
+}
+.C_wrap .C_banner_list .C_banner_item a .C_left .C_initial_2 {
+  background: url(../images/ia_10011.png) no-repeat center / 2rem;
+}
+.C_wrap .C_banner_list .C_banner_item a .C_left .C_initial_3 {
+  background: url(../images/ia_10012.png) no-repeat center / 2rem;
+}
+.C_wrap .C_banner_list .C_banner_item a .C_right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 4.25rem;
+  height: 100%;
+  padding: 1rem 0 1rem 0.25rem;
+  box-sizing: border-box;
+}
+.C_wrap .C_banner_list .C_banner_item a .C_right p {
+  display: block;
+  width: 100%;
+  height: 1rem;
+  box-sizing: border-box;
+}
+.C_wrap .C_banner_list .C_banner_item a .C_right .title {
+  color: #373d41;
+  font-size: 0.7725rem;
+}
+.C_wrap .C_banner_list .C_banner_item a .C_right .desc {
+  color: #999;
+  font-size: 0.662rem;
+}
+.C_wrap .C_module_wrap {
+  width: 100%;
+}
+.C_wrap .C_module_wrap .C_news_wrapper {
+  padding: 1.1rem 0.662rem;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_top {
+  text-align: center;
+  padding-top: 1.1rem;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_top a {
+  display: flex;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.32rem;
+  padding-bottom: 0.67rem;
+  color: #373d41;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_top a span {
+  display: block;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-top: 0.25rem;
+  margin-left: 0.5rem;
+  background: url(../images/circle.png) no-repeat center center / 80% 80%;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_top p {
+  height: 2.6rem;
+  padding: 0.662rem 0.55rem;
+  padding-top: 0;
+  color: #999;
+  font-size: 0.662rem;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list {
+  position: relative;
+  background: url(../images/ia_10035.png) no-repeat center center;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list .C_news_item {
+  width: 100%;
+  height: 11rem;
+  background: url(../images/ia_10013.jpg);
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list .C_news_item .C_mask {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 43, 43, 0.3);
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list .C_news_item a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list .C_news_item a p {
+  font-size: 0.991rem;
+  color: #fff;
+  position: relative;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list .C_news_item2 {
+  background-image: url(../images/ia_10014.jpg);
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: 0.11rem;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list .C_news_item2 a {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list .C_news_item2 p {
+  height: auto;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list .C_news_item2 .news-desc {
+  font-size: 0.7725rem;
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list .C_news_item3 {
+  background-image: url(../images/ia_10045.jpg);
+}
+.C_wrap .C_module_wrap .C_news_wrapper .C_news_list .C_news_item4 {
+  background-image: url(../images/ia_10044.jpg);
+}
+.C_wrap .C_pt-summary {
+  background: #f6f7f7;
+}
+.C_wrap .C_pt-summary .C_pt-summary-top {
+  color: #373d41;
+  text-align: center;
+  padding: 2.205rem 0;
+}
+.C_wrap .C_pt-summary .C_pt-summary-top .pt-title {
+  display: block;
+  padding-bottom: 1.32rem;
+  height: 1.95rem;
+  line-height: 1.95rem;
+  font-size: 1.32rem;
+}
+.C_wrap .C_pt-summary .C_pt-summary-top .pt-desc {
+  display: block;
+  color: #999;
+  text-align: center;
+  font-size: 0.66rem;
+  height: 2.6rem;
+  line-height: 1.32rem;
+}
+.C_wrap .C_pt-summary .C_pt-summary-rd {
+  height: 2.93rem;
+  padding: 0 0.18rem 2.205rem;
+}
+.C_wrap .C_pt-summary .C_pt-summary-rd .C_t-summary-rd-list {
+  display: flex;
+}
+.C_wrap .C_pt-summary .C_pt-summary-rd .C_t-summary-rd-list .C_rd_item {
+  flex: 1;
+  text-align: center;
+}
+.C_wrap .C_pt-summary .C_pt-summary-rd .C_t-summary-rd-list .C_rd_item a {
+  display: block;
+}
+.C_wrap .C_pt-summary .C_pt-summary-rd .C_t-summary-rd-list .C_rd_item a img {
+  display: block;
+  height: 1.3rem;
+  margin: 0 auto 0.4rem;
+}
+.C_wrap .C_pt-summary .C_pt-summary-rd .C_t-summary-rd-list .C_rd_item a span {
+  color: #373d41;
+  font-size: 0.7725rem;
+}

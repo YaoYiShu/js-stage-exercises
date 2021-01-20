@@ -1,0 +1,337 @@
+#container {
+  width: 100%;
+  max-width: 20.7rem;
+  margin: 0 auto;
+  .C_news_wrapper {
+    width: 100%;
+    max-width: 20.7rem;
+    margin: 0 auto;
+    padding: 1.1rem 0 1.1rem 0.66rem;
+    box-sizing: border-box;
+    // background: #f5f6f7;
+    // background: #000;
+    .C_news_top {
+      // height: 5.9rem;
+      text-align: center;
+      a {
+        display: flex;
+        width: 100%;
+        height: 2rem;
+        font-size: 1.32rem;
+        padding-bottom: 0.67rem;
+        color: #373d41;
+        justify-content: center;
+        span {
+          display: block;
+          width: 1.35rem;
+          height: 1.35rem;
+          margin-top: 0.25rem;
+          // background: red;
+          margin-left: 0.5rem;
+          background: url(../images/circle.png) no-repeat center center / 80%
+            80%;
+        }
+      }
+      p {
+        height: 2rem;
+        padding: 0.662rem 0 0 0.55rem;
+        padding-top: 0;
+        color: #999;
+        //   text-align: center;
+        font-size: 0.662rem;
+      }
+    }
+    .C_news_content {
+      height: 8.275rem;
+      width: 100%;
+      // background: black;
+      overflow: hidden;
+      ul {
+        height: 100%;
+        width: 250%;
+        display: flex;
+        // justify-content: space-between;
+        li {
+          display: block;
+          background: red;
+          // width: 16.555rem;
+          width: 100% / 3;
+          height: 100%;
+          margin-right: 1rem;
+          // margin-right: ;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/ia_10028.jpg);
+            background-repeat: no-repeat;
+            // background-position: center left;
+            background-size: 106%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .C_mask {
+              width: 100%;
+              height: 100%;
+              background: rgba(43, 43, 43, 0.3);
+              position: absolute;
+            }
+            p {
+              width: 100%;
+              font-size: 0.991rem;
+              color: #fff;
+              position: relative;
+              text-align: center;
+              margin-top: 0.5rem;
+            }
+            .C_desc {
+              font-size: 0.662rem;
+            }
+          }
+          &:nth-child(2) a {
+            background-image: url(../images/ia_10029.jpg);
+          }
+          &:nth-child(3) a {
+            background-image: url(../images/ia_10030.jpg);
+          }
+        }
+      }
+    }
+  }
+  .C_market_wrapper {
+    padding: 0 0.33rem;
+    background-image: linear-gradient(to bottom, #6d8aa2 0, #5e7e99 100%);
+    // background: red;
+    .C_market-section {
+      padding-top: 2.48rem;
+      a {
+        width: 100%;
+        font-size: 1.32rem;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.66rem;
+        span {
+          display: block;
+          width: 1.35rem;
+          height: 1.35rem;
+          margin-top: 0.25rem;
+          margin-left: 0.5rem;
+          background: url(../images/circle.png) no-repeat center center / 80%
+            80%;
+        }
+      }
+      .C_market_desc {
+        font-size: 0.66rem;
+        height: 2.6rem;
+        padding: 0 0.55rem 0.66rem;
+        color: #fbfbfb;
+        text-align: center;
+      }
+      .C_market_products {
+        padding: 0 0.33rem 2.48rem;
+        .C_market_products_list {
+          display: flex;
+          .C_product_item {
+            background: #92a3b4;
+            flex: 1;
+            display: flex;
+            height: 5.5rem;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .C_product-title {
+              color: #ccc;
+              font-size: 0.6rem;
+              // text-align: center;
+              padding-bottom: 0.275rem;
+              height: 1.35rem;
+              // margin-top: 20px;
+              box-sizing: border-box;
+            }
+            span {
+              display: block;
+              width: 1.375rem;
+              height: 1.93rem;
+              background: url(../images/ia_10031.png) no-repeat center / contain;
+              // margin: 0 auto;
+              padding-bottom: 0.275rem;
+            }
+            .C_product-name {
+              // text-align: center;
+              color: #fbfbfb;
+              font-size: 0.77rem;
+            }
+            &:nth-child(2) span {
+              background: url(../images/ia_10032.png) no-repeat center / contain;
+            }
+            &:nth-child(3) span {
+              background: url(../images/ia_10033.png) no-repeat center / contain;
+            }
+            &:nth-child(4) span {
+              background: url(../images/ia_10034.png) no-repeat center / contain;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .C_layout-grid {
+    width: 100%;
+    margin: 0 auto;
+    .C_news_wrapper {
+      padding: 1.1rem 0.66rem;
+      .C_yunqi-list {
+        min-height: 11rem;
+        background: red;
+        background: url(../images/ia_10035.png) no-repeat center;
+      }
+    }
+  }
+
+  .C_partner_wrapper {
+    background: #f5f6f7;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1.1rem;
+    .C_partner-title {
+      color: #373d41;
+      text-align: center;
+      padding: 1.1rem 0.66rem;
+      font-size: 1.32rem;
+    }
+    .C_partner_list {
+      display: flex;
+      .C_partner_item {
+        flex: 1;
+        padding: 0.55rem 1.1rem;
+        height: 2.755rem;
+        margin-bottom: 1.32rem;
+        // background: url(../images/ia_10036.png) no-repeat center / contain;
+        background-image: url(../images/ia_10036.png);
+        background-size: 4.5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:nth-child(2) {
+          background-image: url(../images/ia_10037.png);
+        }
+        &:nth-child(3) {
+          background-image: url(../images/ia_10038.png);
+        }
+      }
+    }
+  }
+  .C_new_account_wrapper {
+    background: #00c1de;
+    padding: 1.32rem 0.66rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .C_new_account_title {
+      font-size: 1.32rem;
+      font-weight: 700;
+      text-align: center;
+      padding-bottom: 0.66rem;
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      padding: 0 1.655rem;
+      border: 0.05rem solid #fff;
+      text-align: center;
+      height: 1.985rem;
+      line-height: 1.985rem;
+      width: 3.09rem;
+      font-size: 0.77rem;
+    }
+  }
+  .C_module_wrap_footer {
+    background: #373d41;
+    padding-bottom: 0.55rem;
+    .C_hot_product {
+      padding: 0.825rem 1.1rem;
+      h2 {
+        font-size: 0.7rem;
+        margin-bottom: 0.55rem;
+        color: #999;
+        // 减少字符之间的空白
+        letter-spacing: 0;
+        font-weight: 500;
+      }
+      ul {
+        display: flex;
+        li {
+          margin-right: 0.55rem;
+          a {
+            font-size: 0.7rem;
+            color: #d7d8d9;
+          }
+        }
+      }
+    }
+    .C_footer_common_line {
+      height: 0.05rem;
+      margin: 0 0.44rem;
+      background: #5b5b5b;
+      transform: scaleY(0.5);
+    }
+    .C_footer_blogroll {
+      padding: 0.825rem 1.1rem;
+      li a {
+        line-height: 1.6rem;
+        color: #ebecec;
+        font-size: 0.7rem;
+      }
+      p {
+        display: flex;
+        color: #dfe0e1;
+        font-size: 0.7rem;
+        span {
+          color: #999;
+        }
+        a {
+          font-size: inherit;
+          color: #ebecec;
+          margin-right: 1.38rem;
+          display: flex;
+          span {
+            display: block;
+            width: 1rem;
+            height: 100%;
+            margin-left: 0.25rem;
+            background-image: url(../images/ia_10039.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          &:nth-child(3) span {
+            background-image: url(../images/ia_10040.png);
+          }
+        }
+      }
+    }
+    .C_footer_common_95187 {
+      display: block;
+      height: 1.8rem;
+      line-height: 1.8rem;
+      font-size: 0.7rem;
+      text-align: center;
+      margin: 1rem;
+      border: 0.05rem solid #979797;
+      color: #ebecec;
+    }
+    .C_footer_logo {
+      width: 5.5rem;
+      margin-left: 1.1rem;
+    }
+    .C_footer_copyright {
+      padding: 0.55rem 1.1rem;
+      color: #d7d8d9;
+      font-size: 0.6rem;
+    }
+  }
+}

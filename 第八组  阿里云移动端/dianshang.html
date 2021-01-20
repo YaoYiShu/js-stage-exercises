@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+			.F_dian_header {
+				background-image: url(5-images/1606288638.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 12.875rem;
+				position: relative;
+			}
+
+			.F_dian_header .F_text_top {
+				font-size: 1.5625rem;
+				font-weight: 400;
+				color: #fff;
+				padding: 1.875rem 0 0 1.875rem;
+			}
+
+			.F_dian_header .F_text_bottom {
+				color: #fff;
+				padding: 1.275rem 0 0 1.875rem;
+			}
+
+			.F_dian_vedio {
+				width: 100%;
+			}
+
+			.F_dian_vedio .F_vedio {
+				background-image: url(5-images/1606288639.jpg);
+				width: 100%;
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 17.5rem;
+				position: relative;
+			}
+
+			.F_dian_vedio .F_vedio .F_vedioplay {
+				position: absolute;
+				transform: scale(0.8);
+				top: 5.3rem;
+				left: 12.5rem;
+			}
+
+			.F_dian_security {
+				width: 100%;
+				height: 63.25rem;
+			}
+
+			.grid {
+				margin-top: 3.125rem;
+			}
+
+			.F_dian_security_header {
+				font-size: 1.875rem;
+				font-weight: 400;
+				color: #00c1de;
+				padding: 0.875rem 0 0 1.275rem;
+			}
+
+			.F_dian_security_content {
+				font-size: 1.1875rem;
+				width: 90%;
+				color: #676c77;
+				padding: 0.875rem 0 0.875rem 1.275rem;
+			}
+
+			.F_dian_security_picture {
+				width: 100%;
+				/* margin: 0 1.5625rem; */
+			}
+
+			.F_kong {
+				width: 100%;
+				height: 2rem;
+				background-color: #d7d8d9;
+			}
+
+			.F_title_content {
+				font-size: 1.25rem;
+				height: 3.4375rem;
+				line-height: 3.4375rem;
+			}
+
+			.F_title_title {
+				width: 100%;
+				height: 2.1875rem;
+				background-color: #d7d8d9;
+				padding-left: 1.25rem;
+				line-height: 2.1875rem;
+				box-sizing: border-box;
+			}
+
+			.F_boxblock {
+				position: relative;
+				width: 100%;
+			}
+
+			.F_leftimg {
+				position: absolute;
+				transform: scale(0.4);
+				top: 3.5rem;
+				left: 0.2rem;
+			}
+
+			.F_leftimg2 {
+				transform: scale(0.7);
+				top: 4.5rem;
+				left: 1.375rem;
+			}
+
+			.F_leftimg4 {
+				transform: scale(0.3);
+				top: 3rem;
+				left: -1.25rem;
+			}
+
+			.F_leftimg5 {
+				transform: scale(0.4);
+				left: 0;
+			}
+
+			.F_boxblock_content {
+				width: 80%;
+				margin-top: 0.9375rem;
+				margin-left: 5.125rem;
+			}
+
+			.F_boxblock_content .F_toptext {
+				font-size: 1.25rem;
+				padding-bottom: 0.625rem;
+			}
+
+			.F_boxblock_content .F_bottomtext {
+				color: #999999;
+				padding-bottom: 0.9375rem;
+			}
+
+			.F_fragment {
+				width: 100%;
+			}
+
+			.fragmemt_part {
+				margin-top: 1.25rem;
+				position: relative;
+				height: 10.625rem;
+			}
+
+			.F_fragment_left {
+				position: absolute;
+				transform: scale(0.5);
+				top: -4.625rem;
+				left: -3.75rem;
+			}
+
+			#fragment_auto {
+				transform: scale(0.6);
+				top: -2rem;
+				left: -2.75rem;
+			}
+
+			#fragment_zero {
+				transform: scale(0.4);
+				top: -4rem;
+				left: -7.2rem;
+			}
+
+			.F_fragment_right {
+				width: 52%;
+				color: #999999;
+				margin-left: 13.5rem;
+			}
+
+			.fragmemt_top {
+				font-size: 1.25rem;
+				color: #373d41;
+				font-weight: 700;
+				padding-bottom: 0.3125rem;
+			}
+
+			.F_c_service {
+				width: 100%;
+				height: 2.5125rem;
+				background-color: #e4f8fb;
+				color: #00c1de;
+				text-align: center;
+				line-height: 2.5125rem;
+			}
+
+			.F_dian_footer {
+				width: 100%;
+				background-color: #000000;
+				/* text-align: center; */
+				height: 13.75rem;
+				position: relative;
+				background-image: url(5-images/1606288653.png);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			#F_footer_bg {}
+
+			.F_footer_content {
+				width: 70%;
+				color: #fff;
+				font-size: 0.9rem;
+				padding-left: 5.625rem;
+				padding-top: 3rem;
+			}
+
+			.F_footer_content li {
+				padding-bottom: 0.625rem;
+			}
+
+			.F_footer_content>li:first-child {
+				font-size: 1.5rem;
+			}
+
+			.F_footer_content_inside li {
+				float: left;
+				padding-right: 1.25rem;
+				color: #00a2ca;
+			}
+
+			.F_footer_content_inside li:first-child {
+				border: 1px solid #fff;
+				height: 36px;
+				line-height: 36px;
+				padding: 0 40px;
+				color: #fff;
+				display: inline-block;
+				font-size: 14px;
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="F_dian_header">
+			<p class="F_text_top">新零售解决方案</p>
+			<p class="F_text_bottom">快速了解电商行业最常用的数据及API<br />
+				实名认证、快递、人工智能、大数据分析、生活指数等应用</p>
+		</div>
+
+		<div class="F_dian_vedio">
+			<div class="F_vedio_header F_title_title">电商行业视频解读</div>
+			<div class="F_vedio">
+				<div class="F_vedioplay"><img src="./5-images/播放.png"></div>
+			</div>
+		</div>
+
+		<div class="F_dian_hotscenes F_title_title">行业热门场景</div>
+
+		<div class="F_dian_security">
+			<div class="F_dian_security_header">电商网站安全防护</div>
+			<div class="F_dian_security_content">
+				网站应用存在漏洞，数据库被拖，用户信息或商品信息被窃取； 网页被植入暗链或挂马，客户被引流到竞争对手。 网页被篡改，不仅影响公司形象，更导致用户失去信心。
+			</div>
+			<img class="F_dian_security_picture" src="5-images/1606288641.jpg">
+
+			<div class="F_dian_security_header grid">数据可视化展示大屏</div>
+			<div class="F_dian_security_content">
+				通过大屏用户可实时监控当日交易支付金额，成交会员分析、热销商品排行等品牌全域核心数据，满足用户随时掌握经营动态，实时预警，快速调整运营策略等场景使用需求。
+			</div>
+			<img class="F_dian_security_picture" src="5-images/1606288642.jpg">
+		</div>
+
+		<div class="F_kong"></div>
+		<div class="F_resolvent F_title_content">解决方案</div>
+		<hr style="background-color: #d7d8d9;" />
+		<div class="F_front F_title_content">行业前沿</div>
+
+		<div class="F_id F_boxblock">
+			<div class="F_id_authentication F_title_title">实名认证服务</div>
+			<div class="F_id_left F_leftimg"><img src="5-images/1606288643.png"></div>
+			<div class="F_boxblock_content">
+				<p class="F_toptext">印刷文字识别-身份证识别</p>
+				<p class="F_bottomtext">身份证识别服务可以自动地从图片中定位身份证图片区域，识别出其中包含的身份信息。</p>
+			</div>
+		</div>
+
+		<div class="F_intelligence F_boxblock">
+			<div class="F_intelligence_authentication F_title_title">人工智能</div>
+			<div class="F_intelligence_left F_leftimg F_leftimg2"><img src="5-images/1606288644.jpg"></div>
+			<div class="F_boxblock_content">
+				<p class="F_toptext">智能图像技术_人工识别_人脸属性识别</p>
+				<p class="F_bottomtext">身份证识别服务可以自动地从图片中定位身份证图片区域，识别出其中包含的身份信息。在人脸检测定位返回结果的基础上，识别各个检测人脸的四种属性，返回性别（男/女）、年龄、表情（笑/不笑）、眼镜（戴/不戴）；并可返回人脸的1024维深度学习特征，基于这个特征并按照我们给出的特征比较规则</p>
+			</div>
+		</div>
+
+		<div class="F_express F_boxblock">
+			<div class="F_express_authentication F_title_title">快递管理</div>
+			<div class="F_express_left F_leftimg F_leftimg3"><img src="5-images/1606288645.png"></div>
+			<div class="F_boxblock_content">
+				<p class="F_toptext">全国快递物流查询</p>
+				<p class="F_bottomtext">超过450家（不是几十家）快递公司查询，中国很全面的快递查询，自动识别快递公司。支持申通、顺丰、圆通、宅急送、韵达、中通、百世、天天、四通一达、京东、EMS等国内/国际快递查询。</p>
+			</div>
+		</div>
+
+		<div class="F_blacklist F_boxblock">
+			<div class="F_blacklist_authentication F_title_title">个人/企业征信</div>
+			<div class="F_blacklist_left F_leftimg F_leftimg4"><img src="5-images/1606288646.png"></div>
+			<div class="F_boxblock_content">
+				<p class="F_toptext">网贷黑名单信息</p>
+				<p class="F_bottomtext">网贷黑名单是指在P2P等公司借款并恶意拖欠不进行还款的借款人名单，名单由各家P2P公司发布。 应用场景：可用于金融机构贷前调查和信用评估，贷后风险预警
+					数据范围：可查询2014年至今全国范围网贷黑名单</p>
+			</div>
+		</div>
+
+		<div class="F_API F_boxblock">
+			<div class="F_API_authentication F_title_title">电商行业API解决方案</div>
+			<div class="F_API_left F_leftimg F_leftimg5"><img src="5-images/1606288647.png"></div>
+			<div class="F_boxblock_content">
+				<p class="F_toptext">电商行业API解决方案</p>
+				<p class="F_bottomtext">快速了解电商行业最常用的数据及API 实名认证、快递、人工智能、大数据分析、生活指数等应用</p>
+			</div>
+		</div>
+
+		<div class="F_fragment">
+			<div class="F_fragment_top fragmemt_part">
+				<img class="F_fragment_left" src="5-images/1606288648.jpg">
+				<div class="F_fragment_right">
+					<p class="fragmemt_top">电商基础架构建设之路</p>
+					<p>讲解基础架构在电商互联网企业中的重要性，也指出了应对之道。</p>
+				</div>
+			</div>
+			<div class="F_fragment_middle fragmemt_part">
+				<img id="fragment_auto" class="F_fragment_left" src="5-images/1606288649.png">
+				<div class="F_fragment_right">
+					<p class="fragmemt_top">码栈云机，让一切变的自动化</p>
+					<p>码栈专业版是阿里旗下巴巴推出的重磅提效产品，除了能实现ECS服务器特性外，通过码栈强大的人工智能技术，码栈专业版还能提供给商家一个“自动化环境”。</p>
+				</div>
+			</div>
+			<div class="F_fragment_bottom fragmemt_part">
+				<img id="fragment_zero" class="F_fragment_left" src="5-images/1606288650.png">
+				<div class="F_fragment_right">
+					<p class="fragmemt_top">零门槛上云教程</p>
+					<p>通过ECS、RDS、OSS等阿云产品，只需简单几步，用户就快速构建更稳定、安全的应用，提升运维效率，降低 IT 成本，更专注于核心业务创新。</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="F_c_service">咨询</div>
+
+		<div class="F_dian_footer">
+			<!-- <img id="F_footer_bg" src="5-images/1606288653.png" > -->
+			<ul class="F_footer_content">
+				<li>网站解决方案</li>
+				<li>阿里云依据网站不同的发展阶段，提供更合适的架构方案，有效降低网站的开发运维难度和整体IT成本，并保障网站的安全性和稳定性，节约大量的人力和资金投入。</li>
+				<li>
+					<ul class="F_footer_content_inside">
+						<li>联系我们</li>
+						<li>联系大客户经理</li>
+						<li>联系客服</li>
+						<li>联系马云</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+</html>

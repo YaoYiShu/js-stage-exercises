@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+a:hover{
+    color: #ccc;
+}
+li{
+    list-style: none;
+}
+.Tbody{
+    width: 6.7rem;
+    margin: auto;
+}
+i{
+    font-style: normal;
+}
+.clear:after{
+    content: "";
+    clear: both;
+    display:block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
